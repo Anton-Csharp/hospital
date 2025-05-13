@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,22 +16,53 @@ namespace приложение
         public Form1()
         {
             InitializeComponent();
+            dataUser = LoadDataUser();
         }
+        List<string> dataUser = new List<string>();
 
         //вход
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (dataUser.Count >0)
+            {
+                string login = textBox1.Text;
+                string password = textBox2.Text;
+                if (CheckUser(login,password))
+                {
+                    MessageBox.Show("Готово");
+                    ShowData(false);
+                    return;
+                }
+                MessageBox.Show("Неверный логин или пароль!!");
+                
+            }
+            else
+            {
+                MessageBox.Show("такого пользователя нету!!!");
+            }
         }
         //рег
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if (!CheckUser(textBox3.Text ,textBox4.Text ))
+            {
+                saveDataUser(textBox3.Text, textBox3.Text);
+                MessageBox.Show("Вы зарегестрированы");
+                return;
+            }
+            MessageBox.Show("Такой пользователь уже существует!");
         }
         //данные пациента
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (textBox5.Text != ""&& textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "" && textBox8.Text != "" )
+            {
+                MessageBox.Show("данные отправлены");
+            }
+            else
+            {
+                MessageBox.Show("введите все данные!");
+            }
         }
         //запись талона
         private void label9_Click(object sender, EventArgs e)
@@ -57,5 +89,36 @@ namespace приложение
         {
 
         }
+        public void saveDataUser (string login,string password)
+        {
+            File.AppendAllText("dataUser", $"{login}|{password}\n");
+        }
+        public void ShowData (bool v)
+        {
+            panel.Visible = v;
+        }
+        public List<string> LoadDataUser()
+        {
+            if (File.Exists("dataUser"))
+            {
+                return File.ReadAllLines("dataUser").ToList();
+            }
+            return new List<string>();
+        }
+        public bool CheckUser(string login,string password)
+        {
+            dataUser.Clear();
+            dataUser = LoadDataUser();
+            foreach (string data in dataUser)
+            {
+                string[] dataUser = data.Split('|');
+                if (dataUser[0]== login && dataUser[1]==password)
+                {
+                    return true;
+                }
+            }
+            return false ;
+        }
+       
     }
 }
