@@ -19,6 +19,25 @@ namespace приложение
             dataUser = LoadDataUser();
         }
         List<string> dataUser = new List<string>();
+        bool pan = true;
+        Form CurrentChildForm;
+        public void OpenChildForm(Form ChildForm)
+        {
+            
+            panelShowForm.Visible = true;
+            if (CurrentChildForm != null)
+            {
+                CurrentChildForm.Close();
+            }
+            CurrentChildForm = ChildForm;
+            ChildForm.TopLevel = false;
+            ChildForm.FormBorderStyle = FormBorderStyle.None;
+            ChildForm.Dock = DockStyle.Fill;
+            panelShowForm.Controls.Add(ChildForm);
+            panelShowForm.Tag = ChildForm;
+            ChildForm.BringToFront();
+            ChildForm.Show();
+        }
 
         //вход
         private void button1_Click(object sender, EventArgs e)
@@ -67,26 +86,35 @@ namespace приложение
         //запись талона
         private void label9_Click(object sender, EventArgs e)
         {
-
+            panelShowForm.Visible = pan;
+            OpenChildForm(new form10("123"));
         }
         //мои талоны
         private void label10_Click(object sender, EventArgs e)
         {
+            panelShowForm.Visible = pan;
+            OpenChildForm(new form2());
 
         }
         //просмотр участка
         private void label11_Click(object sender, EventArgs e)
         {
+            panelShowForm.Visible = pan;
+            OpenChildForm(new form3());
 
         }
         //все врачи
         private void label12_Click(object sender, EventArgs e)
         {
+            panelShowForm.Visible = pan;
+            OpenChildForm(new form4());
 
         }
         //обратная связь
         private void label13_Click(object sender, EventArgs e)
         {
+            panelShowForm.Visible = pan;
+            OpenChildForm(new form5());
 
         }
         public void saveDataUser (string login,string password)
@@ -119,6 +147,10 @@ namespace приложение
             }
             return false ;
         }
-       
+        //главное меню
+        private void label22_Click(object sender, EventArgs e)
+        {
+            panelShowForm.Visible = false;
+        }
     }
 }
