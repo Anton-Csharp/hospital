@@ -87,15 +87,10 @@ namespace приложение
         private void label9_Click(object sender, EventArgs e)
         {
             panelShowForm.Visible = pan;
-            OpenChildForm(new form10("123"));
+            OpenChildForm(new form10());
         }
-        //мои талоны
-        private void label10_Click(object sender, EventArgs e)
-        {
-            panelShowForm.Visible = pan;
-            OpenChildForm(new form2());
-
-        }
+     
+       
         //просмотр участка
         private void label11_Click(object sender, EventArgs e)
         {
@@ -121,9 +116,9 @@ namespace приложение
         {
             File.AppendAllText("dataUser", $"{login}|{password}\n");
         }
-        public void ShowData (bool v)
+        public void ShowData (bool visible)
         {
-            panel.Visible = v;
+            panel.Visible = visible;
         }
         public List<string> LoadDataUser()
         {

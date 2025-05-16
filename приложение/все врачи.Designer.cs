@@ -37,7 +37,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(325, 38);
+            this.label1.Location = new System.Drawing.Point(232, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 5;
@@ -56,7 +56,7 @@
             "Леонид Бокерия",
             "Святослав Фёдоров",
             "Гиппократ"});
-            this.listBox1.Location = new System.Drawing.Point(234, 82);
+            this.listBox1.Location = new System.Drawing.Point(136, 84);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(333, 279);
             this.listBox1.TabIndex = 4;

@@ -40,19 +40,17 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.panelShowForm = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -65,8 +63,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -118,7 +117,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(235, 81);
+            this.label4.Location = new System.Drawing.Point(258, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(224, 19);
             this.label4.TabIndex = 8;
@@ -129,11 +128,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(226, 40);
+            this.label3.Location = new System.Drawing.Point(242, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(369, 39);
+            this.label3.Size = new System.Drawing.Size(294, 39);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Онлайн поликлинника";
+            this.label3.Text = "Онлайн больница";
             // 
             // label1
             // 
@@ -176,9 +175,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Black;
+            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.textBox4);
@@ -206,22 +205,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(214, 126);
+            this.label6.Location = new System.Drawing.Point(237, 126);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(224, 19);
             this.label6.TabIndex = 15;
             this.label6.Text = "регистрация и записи талонов";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(205, 85);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(369, 39);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Онлайн поликлинника";
             // 
             // label8
             // 
@@ -266,11 +254,11 @@
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Black;
             this.tabPage3.Controls.Add(this.panel);
+            this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Controls.Add(this.label22);
             this.tabPage3.Controls.Add(this.panelShowForm);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.label19);
-            this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Controls.Add(this.label18);
             this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.label16);
@@ -283,7 +271,6 @@
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -291,23 +278,10 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "онлайн поликлинника";
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Black;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label22.Location = new System.Drawing.Point(38, 15);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(107, 17);
-            this.label22.TabIndex = 20;
-            this.label22.Text = "в главное меню";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
-            // 
             // panel
             // 
             this.panel.Controls.Add(this.label21);
-            this.panel.Location = new System.Drawing.Point(3, 0);
+            this.panel.Location = new System.Drawing.Point(14, 6);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(784, 476);
             this.panel.TabIndex = 19;
@@ -323,11 +297,24 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Войдите в аккаунт!!!";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Black;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label22.Location = new System.Drawing.Point(17, 15);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(107, 17);
+            this.label22.TabIndex = 20;
+            this.label22.Text = "в главное меню";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
+            // 
             // panelShowForm
             // 
-            this.panelShowForm.Location = new System.Drawing.Point(188, 0);
+            this.panelShowForm.Location = new System.Drawing.Point(161, 3);
             this.panelShowForm.Name = "panelShowForm";
-            this.panelShowForm.Size = new System.Drawing.Size(592, 480);
+            this.panelShowForm.Size = new System.Drawing.Size(616, 480);
             this.panelShowForm.TabIndex = 1;
             this.panelShowForm.Visible = false;
             // 
@@ -354,17 +341,6 @@
             this.label19.Size = new System.Drawing.Size(224, 19);
             this.label19.TabIndex = 17;
             this.label19.Text = "регистрация и записи талонов";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(326, 15);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(369, 39);
-            this.label20.TabIndex = 16;
-            this.label20.Text = "Онлайн поликлинника";
             // 
             // label18
             // 
@@ -456,7 +432,7 @@
             this.label13.BackColor = System.Drawing.Color.Black;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label13.Location = new System.Drawing.Point(37, 362);
+            this.label13.Location = new System.Drawing.Point(10, 336);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(124, 20);
             this.label13.TabIndex = 4;
@@ -469,7 +445,7 @@
             this.label12.BackColor = System.Drawing.Color.Black;
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label12.Location = new System.Drawing.Point(37, 292);
+            this.label12.Location = new System.Drawing.Point(10, 265);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(85, 20);
             this.label12.TabIndex = 3;
@@ -482,25 +458,12 @@
             this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label11.Location = new System.Drawing.Point(37, 231);
+            this.label11.Location = new System.Drawing.Point(10, 196);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(145, 20);
             this.label11.TabIndex = 2;
             this.label11.Text = "просмотр учатска";
             this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Black;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label10.Location = new System.Drawing.Point(37, 162);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 20);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "мои талоны";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -508,12 +471,34 @@
             this.label9.BackColor = System.Drawing.Color.Black;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label9.Location = new System.Drawing.Point(37, 99);
+            this.label9.Location = new System.Drawing.Point(10, 130);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(114, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "запись талона";
             this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(234, 87);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(294, 39);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Онлайн больница";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(369, 15);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(294, 39);
+            this.label20.TabIndex = 21;
+            this.label20.Text = "Онлайн больница";
             // 
             // Form1
             // 
@@ -551,7 +536,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox4;
@@ -559,7 +543,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
@@ -567,7 +550,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -577,6 +559,8 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panelShowForm;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label20;
     }
 }
 

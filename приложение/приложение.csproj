@@ -66,12 +66,6 @@
     <Compile Include="запись талона.Designer.cs">
       <DependentUpon>запись талона.cs</DependentUpon>
     </Compile>
-    <Compile Include="мои талоны.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="мои талоны.Designer.cs">
-      <DependentUpon>мои талоны.cs</DependentUpon>
-    </Compile>
     <Compile Include="обратная связь.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,9 +95,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="запись талона.resx">
       <DependentUpon>запись талона.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="мои талоны.resx">
-      <DependentUpon>мои талоны.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="обратная связь.resx">
       <DependentUpon>обратная связь.cs</DependentUpon>
